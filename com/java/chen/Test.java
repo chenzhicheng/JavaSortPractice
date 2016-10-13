@@ -11,18 +11,17 @@ public class Test {
 	public static void main(String[] args) 
 	{
 		Test sortTest = new Test();
-		int[] array = sortTest.createRandArray(999);
+		int[] array = sortTest.createRandArray(99);
 		//打印原始随机数组
 		System.out.println(Arrays.toString(array));
-		
 		//ISort sortObj = DirectInsertionSort.getInstance();
 		//ISort sortObj = ShellSort.getInstance();
 //		ISort sortObj = SelectSort.getInstance();
 //		ISort sortObj = BubbleSort.getInstance();
-//		ISort sortObj = QuickSort.getInstance();
+		ISort sortObj = QuickSort.getInstance();
 //		ISort sortObj = MergeSort.getInstance();
 //		ISort sortObj = HeapSort.getInstance();
-		ISort sortObj = RadixSort.getInstance();
+//		ISort sortObj = RadixSort.getInstance();
 		sortObj.sort(array);
 //		DirectInsertionSort.getInstance().sortRecursively(array);
 //		DirectInsertionSort.getInstance().binarySort(array);
